@@ -681,3 +681,38 @@ ul.social-list li a:hover, ul.social-list li a:focus{
 	position: absolute;
 	right: 0;
 }
+
+/* Supprimer l'arrière-plan de "Language" */
+.navbar-nav > .dropdown > .dropdown-toggle {
+  background-color: transparent !important; /* Pas de fond */
+  color: white !important; /* Texte blanc */
+  border: none !important; /* Pas de bordure */
+}
+
+/* Pas de fond lorsque le menu est ouvert */
+.navbar-nav > .dropdown.open > .dropdown-toggle {
+  background-color: transparent !important; /* Pas de fond même ouvert */
+  color: white !important; /* Assurez-vous que le texte reste blanc */
+}
+
+/* Changement de style au survol */
+.navbar-nav > .dropdown > .dropdown-toggle:hover {
+  color: #FA8072 !important; /* Couleur saumon au survol */
+  background-color: transparent !important; /* Pas de fond au survol */
+}
+
+/* Rendre les options du menu déroulant cohérentes */
+.navbar-nav > .dropdown > .dropdown-menu {
+  background-color: transparent !important; /* Supprimer le fond */
+  border: none !important; /* Supprimer les bordures */
+}
+
+.navbar-nav > .dropdown > .dropdown-menu > li > a {
+  color: white !important; /* Texte blanc */
+  text-decoration: none !important; /* Pas de soulignement */
+}
+
+.navbar-nav > .dropdown > .dropdown-menu > li > a:hover {
+  color: #FA8072 !important; /* Couleur saumon au survol */
+  background-color: transparent !important; /* Pas de fond au survol */
+}
